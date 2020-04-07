@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Save Books</title>
+</head>
+<body>
+    <div class="container-fluid">
+<div class="row">
+
+    <div class="col-md-12">
+
+        <form>
+            <div class="form-group">
+              <label for="bname">Book name:</label> 
+              <input type="text" id="bname" name="fname" class="form-control" placeholder="book name">
+            </div>
+             <div class="form-group">
+              <label for="bname">Author name:</label> 
+              <input type="text" id="aname" name="aname" class="form-control" placeholder="Author name">
+            </div>
+          
+            <div class="form-group">
+              <label for="comment">Comment textarea</label>
+              <textarea class="form-control" id="comment" rows="3"></textarea>
+            </div>
+            <button type="button" id="bookbtn" class="btn btn-primary">Save</button>
+          </form>
+
+    </div>
+</div>
+
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

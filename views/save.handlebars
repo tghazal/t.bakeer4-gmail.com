@@ -1,0 +1,35 @@
+<div class="container">
+
+<div class="row">
+    <div class="col-md-9">
+        <form>
+            <div class="form-group">
+              <label for="bname">Book name:</label> 
+              <input type="text" id="bname" name="fname" class="form-control" placeholder="book name">
+            </div>
+             <div class="form-group">
+              <label for="bname">Author name:</label> 
+              <input type="text" id="aname" name="aname" class="form-control" placeholder="Author name">
+            </div>
+          
+            <div class="form-group">
+              <label for="comment">Comment textarea</label>
+              <textarea class="form-control" id="comment" rows="3"></textarea>
+            </div>
+            <button type="button" id="bookbtn" class="btn btn-primary">Save</button>
+          </form>
+          </div>
+</div>
+
+    {{#each books}}
+    <div class="row mt-5">
+ <div class="col-md-2 border ">{{this.name}}</div>
+ <div class="col-md-2 border ">{{this.author}}</div>
+  <div class="col-md-2 border ">{{this.comment}}</div>
+
+</div>
+
+{{/each}}
+
+    </div>
+</div>
